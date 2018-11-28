@@ -1,0 +1,8 @@
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\bin\Debug\ammogHelper.dll
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\bin\Debug\ammogHelper.pdb
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\bin\Debug\ammogHelper.xml
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\obj\Debug\ammogHelper.Resources.resources
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\obj\Debug\ammogHelper.vbproj.GenerateResource.Cache
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\obj\Debug\ammogHelper.dll
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\obj\Debug\ammogHelper.xml
+C:\Users\ammog\Documents\Visual Studio 2010\Projects\WinEntityFrameWork\ammogHelper\obj\Debug\ammogHelper.pdb

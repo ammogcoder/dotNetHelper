@@ -1,0 +1,375 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ammogHelper
+</name>
+</assembly>
+<members>
+<member name="M:ammogHelper.WinForms.WinFormHelper.LoadControl(System.Windows.Forms.Form,System.Windows.Forms.Panel@,System.Windows.Forms.UserControl)">
+	<summary>
+ Loads a user control to specific panel inside a form
+ </summary>
+	<param name="f">Parent form</param>
+	<param name="targetPanel">Target panle</param>
+	<param name="sourceControl">User control to be loaded</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.FormatForCombo(System.Windows.Forms.ComboBox,System.Data.DataTable,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ Binds datatable as items on a combobox
+ </summary>
+	<param name="Cmb">Target combobox</param>
+	<param name="dts">Source datatable</param>
+	<param name="SelValue">Column name for value member</param>
+	<param name="DisValue">Column name for display value</param>
+	<param name="DisPlayStr">Default string for display e.g Select..</param>
+	<param name="IsGuidCol">Optional indicator if value member is of type guid</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindCombo(System.Windows.Forms.ComboBox,System.Object,System.String,System.String)">
+	<summary>
+ Binds collection object to a combo box
+ </summary>
+	<param name="cmb">Target combobox</param>
+	<param name="dt">Source collection object e.g. datatable</param>
+	<param name="ValueStr">Name of value member</param>
+	<param name="DisplayStr">Name of display member</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindCombo(System.Windows.Forms.ComboBox,System.Collections.Generic.List{System.Object})">
+	<summary>
+ Binds list of object to a combobox
+ </summary>
+	<param name="cmb">Target combobox</param>
+	<param name="Items">Source list for binding</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.FadeHide(System.Windows.Forms.Form)">
+	<summary>
+ Hide a form with a fade in effect
+ </summary>
+	<param name="f">target form</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.FadeShow(System.Windows.Forms.Form)">
+	<summary>
+ Show a form with a fade in effect
+ </summary>
+	<param name="f">Target form</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.IsEmpty(System.Object)">
+	<summary>
+ Check of an object contains no content or valid item selection has not been performed
+ </summary>
+	<param name="CtrlObj">Target control object which include Textbox, Picturebox, Combobox</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.GetIDAsString(System.Windows.Forms.CheckedListBox,System.String,System.String)">
+	<summary>
+ Gets desired value ID from displayed items on a checklistbox by splitting items
+ </summary>
+	<param name="chk">Target checklistbox</param>
+	<param name="ItmSeparator">The char for splitting each item</param>
+	<param name="Separator">The char for combining the values together as string</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.ItemSelected(System.Windows.Forms.CheckedListBox)">
+	<summary>
+ Check if at least an item is selected on a checkedlistbox
+ </summary>
+	<param name="chk">Target control</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.HasItem(System.Windows.Forms.CheckedListBox,System.String)">
+	<summary>
+ Check if checkedlistbox contains a an item
+ </summary>
+	<param name="chk">Target control</param>
+	<param name="ItemName">Item to be checked</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindChkList(System.Windows.Forms.CheckedListBox@,System.String,System.Data.DataTable@)">
+	<summary>
+ Binds a datatable to checkedlistbox
+ </summary>
+	<param name="ChkList">Target control</param>
+	<param name="Display">The column name of the datatable to be used</param>
+	<param name="dt">Source datatable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.ToggleSelect(System.Windows.Forms.CheckedListBox@,System.Boolean)">
+	<summary>
+ Toggle selection state of the checkboxes in checkedListbox
+ </summary>
+	<param name="ChkList">Target control</param>
+	<param name="Value">Boolean value to be passed for selection</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindChkList(System.Windows.Forms.CheckedListBox@,System.Data.DataView@,System.String)">
+	<summary>
+ Binds dataview to a checkedlistbox
+ </summary>
+	<param name="ChkList">Target Control</param>
+	<param name="dv">Source dataview</param>
+	<param name="Display">Required display name from the dataview</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.GetSelectedItemCount(System.Windows.Forms.CheckedListBox)">
+	<summary>
+ Gets the number of selected items in a checkedlistbox
+ </summary>
+	<param name="chk">Target control</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.CreateTableFromDataview(System.Data.DataView)">
+	<summary>
+ Converts a dataview to a datatable
+ </summary>
+	<param name="obDataView">Target control</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindList(System.Windows.Forms.ListBox@,System.String,System.Data.DataTable@)">
+	<summary>
+ Binds a datatable to a listbox
+ </summary>
+	<param name="List">Target control</param>
+	<param name="Display">Display member required</param>
+	<param name="dt">Source datatable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindList(System.Windows.Forms.ListBox@,System.String,System.Data.DataView@)">
+	<summary>
+ Binds a dataview to a listbox
+ </summary>
+	<param name="List">Target control</param>
+	<param name="Display">Required display name from dataview</param>
+	<param name="dv">Source dataview</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.BindList(System.Windows.Forms.ListBox@,System.String,System.String,System.Data.DataTable@)">
+	<summary>
+ Binds a datatable to a listbox
+ </summary>
+	<param name="LstBox">Target control</param>
+	<param name="Value">Value member to be used</param>
+	<param name="Display">Display member used</param>
+	<param name="dt">Source datatable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.ClearGrid(System.Windows.Forms.DataGridView@)">
+	<summary>
+ Removes all the columns of DataGridView
+ </summary>
+	<param name="dgvList">Target control</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.HideColumn(System.Windows.Forms.DataGridView@)">
+	<summary>
+ Hides all the columns in datagridview
+ </summary>
+	<param name="dgvList">Target control</param>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.WinForms.WinFormHelper.TMsgBox(System.String,Microsoft.VisualBasic.MsgBoxStyle)">
+	<summary>
+ Display MsgBox with application title as the default title
+ </summary>
+	<param name="Prompt">Content of msgbox</param>
+	<param name="MsgBoxStyles">Optional msgboxstyles required. Default is OkOnly</param>
+	<remarks></remarks>
+</member><member name="T:ammogHelper.WinForms.WinFormHelper">
+	<summary>
+ Winform Helper class for extending the methods available for common windows form controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.SQLClients.SQLClientHelper.PingDB(System.String)">
+	<summary>
+ Checks if a sql database is reachable
+ </summary>
+	<param name="DBConnectionString">Connectionstring to database</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.SQLClients.SQLClientHelper.GetSqlParameterFromProperties(System.Object,System.String[])">
+	<summary>
+ Derive array of SQL parameter from the properties of an object
+ </summary>
+	<param name="RequiredObject">Object to be examined for available properties</param>
+	<param name="NeededKeys">Optional array of string to list the required properties. If not specified, all properties would be used</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:ammogHelper.SQLClients.CustomSQLException.SQL_ERROR_CODE_ENTITY_NOT_FOUND">
+	<summary>
+ Represents the error code returned from stored procedure when entity could not be found.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ammogHelper.SQLClients.CustomSQLException.SQL_ERROR_CODE_TIME_MISMATCH">
+	<summary>
+ Represents the error code returned from stored procedure when entity to be updated has time mismatch
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ammogHelper.SQLClients.CustomSQLException.SQL_ERROR_CODE_PERSISTENCE_ERROR">
+	<summary>
+ Represents the error code returned from stored procedure when a persistence exception occurs
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ammogHelper.SQLClients.CustomSQLException.SQL_DEADLOCK_ERROR">
+	<summary>
+ Represents the error code returned when dead lock occurs
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ammogHelper.SQLClients.CustomSQLException.SQL_TIMEOUT_ERROR">
+	<summary>
+ Represents the error code returned when timeout occurs
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ammogHelper.SQLClients.CustomSQLException">
+	<summary>
+ A class to customize message from default 'throw exception'
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Images.ImageHelper.ConvertFileToBitmap(System.String,System.Drawing.Size)">
+	<summary>
+ Convert a picture file to a bitmap
+ </summary>
+	<param name="FileName">Name of the file to be converted</param>
+	<param name="Imgsize">Optional dimension for resizing the bitmap if default is not required</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Images.ImageHelper.WriteBinarytoFile(System.String,System.Byte[],System.Int16,System.Int16,System.Drawing.Imaging.ImageFormat)">
+	<summary>
+ Writes image binary to file
+ </summary>
+	<param name="ImagePath">Full file name for image</param>
+	<param name="Images">Image binary</param>
+	<param name="ImgWidth">The width to be used for image</param>
+	<param name="imgHeight">The height to be used for image</param>
+	<param name="ImageFormats">The image format required</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Images.ImageHelper.ConvertByteToBitmap(System.Byte[],System.Drawing.Size)">
+	<summary>
+ Converts image binary to bitmap
+ </summary>
+	<param name="Photo">Array of byte to be converted</param>
+	<param name="BitmapSize">Optional Size of the bitmap required</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.ToProper(System.String)">
+	<summary>
+ Formats string as propercase
+ </summary>
+	<param name="source"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.ToStringConcatenate(System.String[],System.String)">
+	<summary>
+ Reads through the string array and combine all contents as string separated with space or other separator
+ </summary>
+	<param name="aString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.ShuffleString(System.String[])">
+	<summary>
+ Returns a shuffled array of string 
+ </summary>
+	<param name="texts"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.Shuffle``1(``0[])">
+	<summary>
+ Returns a shuffled array of T
+ </summary>
+	<typeparam name="T"></typeparam>
+	<param name="array"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.ToHtmlList(System.String[])">
+	<summary>
+ Reads through the string array and combine all contents as html List
+ </summary>
+	<param name="aString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.PingComputer(System.String)">
+	<summary>
+ Checks if a remote computer is reachable
+ </summary>
+	<param name="ComputerID">Qualified identity of the computer</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.PingWebURL(System.String)">
+	<summary>
+ Checks if a web URL is reachable
+ </summary>
+	<param name="WebURL">Web URL to be checked</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.StripHtml(System.String)">
+	<summary>
+ Strips off html tags from a string and return plain string
+ </summary>
+	<param name="source">String to be processed</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.ToDatatable(System.String[],System.String)">
+	<summary>
+ Converts an array of string to datatable
+ </summary>
+	<param name="source">Target array</param>
+	<param name="ColumnName">Optional column name for the datatable</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.GetLastDayOfMonth(System.DateTime)">
+	<summary>
+  Gets the last day of a specified datetime
+ </summary>
+	<param name="MonthDate">Target datetime</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.CompareByteArrays(System.Byte[],System.Byte[])">
+	<summary>
+ Compares if two array of byte are the same
+ </summary>
+	<param name="Array1">First array</param>
+	<param name="Array2">Second array</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.GetUniqueKeySlim(System.Int32)">
+	<summary>
+ Generates Random character of specified length (length must no be more than 32)
+ </summary>
+	<param name="maxSize"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.GetUniqueKey(System.Int32)">
+	<summary>
+ Generates Random alpha-numeric characters of specified length
+ </summary>
+	<param name="maxSize"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.WriteBinaryAsFileHidden(System.String,System.Byte[])">
+	<summary>
+ Writes a file to disk with hidden attribute
+ </summary>
+	<param name="FileName">File name to be written</param>
+	<param name="data">Binary to be written</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ammogHelper.Core.CoreHelper.WriteBinaryAsFile(System.String,System.Byte[])">
+	<summary>
+ Writes a binary to disk
+ </summary>
+	<param name="FileName">File name to be written</param>
+	<param name="data">Binary to be written</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ammogHelper.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ammogHelper.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ammogHelper.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
