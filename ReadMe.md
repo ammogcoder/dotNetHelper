@@ -1,7 +1,7 @@
 Welcome to the .NET Helper Extensions Libraries
 Libraries with routines and extensions for performing common and useful programming functions on the .NET platform across winforms, webforms, database.
-
-This library contains different .NET classes for extending and increasing the methods available within the .NET framework. The current version is based on framework 4.0. Some of the classes include the following as well as the open source ADO.NET SQL helper class which has been extended to accommodate some other methods.
+<br /><br />
+This library contains different .NET classes for extending and increasing the methods available within the .NET framework. The current version is based on framework 4.0. Some of the classes include the following as well as the open source ADO.NET SQL helper class which has been extended to accommodate some other methods.<br /><br />
 DatasetHelper- Focuses on datatable and dataset<br />
 GeneralRoutine - Focuses on general routines across various object types<br />
 HTMLTableHelper - Focuses on generation of html table generation from server-side code<br />
