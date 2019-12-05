@@ -13,4 +13,4 @@ SQLHelper - The standard open source SQLHelper with additional features<br /><br
 
 Future release will provide classes which will rely on external libraries to simplify the application integration. Some of the features will include
 Reporting
-Compression 
+Compression --Just adding comments
